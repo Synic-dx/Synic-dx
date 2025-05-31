@@ -13,10 +13,10 @@ const socials = [
     icon: faGithub,
     url: "https://github.com/Synic-dx",
   },
-  {
-    icon: faReddit,
-    url: "https://www.reddit.com/user/Shinjan128/",
-  },
+  // {
+  //   icon: faReddit,
+  //   url: "https://www.reddit.com/user/Shinjan128/",
+  // },
   {
     icon: faNpm,
     url: "https://www.npmjs.com/~synic-dx",
