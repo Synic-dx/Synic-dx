@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faReddit, faNpm } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faReddit, faNpm, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
 
 const socials = [
@@ -13,10 +13,10 @@ const socials = [
     icon: faGithub,
     url: "https://github.com/Synic-dx",
   },
-  // {
-  //   icon: faReddit,
-  //   url: "https://www.reddit.com/user/Shinjan128/",
-  // },
+  {
+    icon: faLinkedin,
+    url: "https://in.linkedin.com/in/shinjan-garain",
+  },
   {
     icon: faNpm,
     url: "https://www.npmjs.com/~synic-dx",
