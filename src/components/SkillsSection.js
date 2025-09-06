@@ -19,8 +19,8 @@ import "@fontsource/karla";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
-  faFigma,
-  faNodeJs,
+  faRProject,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -100,12 +100,12 @@ const SkillsSection = () => {
 
             <CircularProgress
               value={75}
-              color="pink.400"
+              color="red.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
             >
               <CircularProgressLabel>
-                <FontAwesomeIcon icon={faFigma} color="pink" size="2x" />
+                <FontAwesomeIcon icon={faRProject} color="red" size="2x" />
               </CircularProgressLabel>
             </CircularProgress>
 
@@ -121,13 +121,13 @@ const SkillsSection = () => {
             </CircularProgress>
 
             <CircularProgress
-              value={60}
+              value={80}
               color="green.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
             >
               <CircularProgressLabel>
-                <FontAwesomeIcon icon={faNodeJs} color="green" size="2x" />
+                <FontAwesomeIcon icon={faPython} color="green" size="2x" />
               </CircularProgressLabel>
             </CircularProgress>
           </HStack>
