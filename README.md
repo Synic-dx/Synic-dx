@@ -9,6 +9,3 @@ Student @ Full-Stack
 _________
 
 [![](https://visitcount.itsvg.in/api?id=Synic-dx&label=Profile%20Views&color=1&icon=2&pretty=true)](https://synic.vercel.app/)
-_________
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn?style=flat&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/shinjan-garain/)
