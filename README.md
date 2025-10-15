@@ -11,5 +11,4 @@ _________
 [![](https://visitcount.itsvg.in/api?id=Synic-dx&label=Profile%20Views&color=1&icon=2&pretty=true)](https://synic.vercel.app/)
 _________
 
-[![(https://img.shields.io/badge/LinkedIn?style=flat&logo=-linkedin&logoColor=blue&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fshinjan-garain%2F)
-](https://www.linkedin.com/in/shinjan-garain/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn?style=flat&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/shinjan-garain/)
