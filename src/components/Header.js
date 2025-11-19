@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faReddit, faNpm, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -7,7 +8,7 @@ import { Box, HStack } from "@chakra-ui/react";
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto:shinjan1280@gmail.com",
+    url: "mailto:i25ShinjanG@iimidr.ac.in",
   },
   {
     icon: faGithub,
@@ -52,35 +53,56 @@ const Header = () => {
     >
       <nav>
         <HStack gap={{ base: 4, md: 6}}>
-          {socials.map((social) => (
-            <a
-              key={social.icon}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hoverAnimation"
-            >
-              <FontAwesomeIcon icon={social.icon} size="xl" />
-            </a>
-          ))}
+          {socials.map((social, i) => {
+            const isMail = typeof social.url === 'string' && social.url.startsWith('mailto:');
+            return (
+              <motion.a
+                key={`${social.url}-${i}`}
+                href={social.url}
+                {...(!isMail ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                onClick={(e) => {
+                  if (isMail) {
+                    // Ensure mailto works reliably: set location.href so mail client opens
+                    e.preventDefault();
+                    window.location.href = social.url;
+                  }
+                }}
+                className="hoverAnimation"
+                whileHover={{ scale: 1.15 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                style={{ display: "inline-block" }}
+              >
+                <FontAwesomeIcon icon={social.icon} size="xl" />
+              </motion.a>
+            );
+          })}
         </HStack>
       </nav>
       <nav>
-        <HStack gap={{ base: 4, md: 6}}>
-          <a
+          <HStack gap={{ base: 4, md: 6}}>
+          <motion.a
             onClick={handleClick("projects")}
             href="#projects-section"
             className="hoverAnimation"
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.96 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            style={{ display: "inline-block" }}
           >
             Projects
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             onClick={handleClick("skills")}
             href="#skills-section"
             className="hoverAnimation"
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.96 }}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            style={{ display: "inline-block" }}
           >
             Skills
-          </a>
+          </motion.a>
         </HStack>
       </nav>
     </HStack>

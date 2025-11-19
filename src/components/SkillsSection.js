@@ -17,6 +17,8 @@ import FullScreenSection from "./FullScreenSection";
 import Card from "./Card";
 import "@fontsource/karla";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
+const MotionCircularProgress = motion(CircularProgress);
 import {
   faReact,
   faRProject,
@@ -87,49 +89,61 @@ const SkillsSection = () => {
             Skills Attained
           </Heading>
           <HStack>
-            <CircularProgress
+            <MotionCircularProgress
               value={75}
               color="cyan.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <CircularProgressLabel>
                 <FontAwesomeIcon icon={faReact} color="cyan" size="2x" />
               </CircularProgressLabel>
-            </CircularProgress>
+            </MotionCircularProgress>
 
-            <CircularProgress
+            <MotionCircularProgress
               value={75}
               color="red.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <CircularProgressLabel>
                 <FontAwesomeIcon icon={faRProject} color="red" size="2x" />
               </CircularProgressLabel>
-            </CircularProgress>
+            </MotionCircularProgress>
 
-            <CircularProgress
+            <MotionCircularProgress
               value={50}
               color="yellow.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <CircularProgressLabel>
                 <FontAwesomeIcon icon={faDatabase} color="yellow" size="2x" />
               </CircularProgressLabel>
-            </CircularProgress>
+            </MotionCircularProgress>
 
-            <CircularProgress
+            <MotionCircularProgress
               value={80}
               color="green.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <CircularProgressLabel>
                 <FontAwesomeIcon icon={faPython} color="green" size="2x" />
               </CircularProgressLabel>
-            </CircularProgress>
+            </MotionCircularProgress>
           </HStack>
         </VStack>
 

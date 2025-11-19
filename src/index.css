@@ -61,7 +61,7 @@ code {
 
 #avatar {
   --b: 2.5px; /* the border thickness*/
-  --g: 8px; /* the gap */
+  --g: 7px; /* the gap */
   --c: #4ecdc4; /* the color */
 
   aspect-ratio: 1;
@@ -75,4 +75,40 @@ code {
 
 main {
   max-width: 100vw;
+}
+
+/* Horizontal scroll styling and animated scrollbar for the projects section */
+.horizontal-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* WebKit scrollbar (Chrome, Edge, Safari) */
+.horizontal-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.04);
+  border-radius: 10px;
+}
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(0,255,255,0.9), rgba(0,200,255,0.9));
+  border-radius: 10px;
+  background-size: 200% 100%;
+  animation: thumb-slide 2s linear infinite;
+}
+
+@keyframes thumb-slide {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+/* Firefox scrollbar colors */
+.horizontal-scroll {
+  scrollbar-color: rgba(0,255,255,0.9) rgba(255,255,255,0.04);
+  scrollbar-width: thin;
+}
+
+/* Make scrollbar more visible when hovering the container */
+.horizontal-scroll:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
 }
