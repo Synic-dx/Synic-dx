@@ -22,9 +22,8 @@ const MotionCircularProgress = motion(CircularProgress);
 import {
   faReact,
   faRProject,
-  faPython,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faFileExcel, faServer } from "@fortawesome/free-solid-svg-icons";
 
 const certificates = [
   {
@@ -99,13 +98,13 @@ const SkillsSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <CircularProgressLabel>
-                <FontAwesomeIcon icon={faReact} color="cyan" size="2x" />
+                <FontAwesomeIcon icon={faReact} color="#61DBFB" size="2x" />
               </CircularProgressLabel>
             </MotionCircularProgress>
 
             <MotionCircularProgress
               value={75}
-              color="red.400"
+              color="blue.400"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
               whileHover={{ scale: 1.15 }}
@@ -113,13 +112,13 @@ const SkillsSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <CircularProgressLabel>
-                <FontAwesomeIcon icon={faRProject} color="red" size="2x" />
+                <FontAwesomeIcon icon={faRProject} color="#276DC3" size="2x" />
               </CircularProgressLabel>
             </MotionCircularProgress>
 
             <MotionCircularProgress
               value={50}
-              color="yellow.400"
+              color="#cc2927"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
               whileHover={{ scale: 1.15 }}
@@ -127,13 +126,14 @@ const SkillsSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <CircularProgressLabel>
-                <FontAwesomeIcon icon={faDatabase} color="yellow" size="2x" />
+                {/* SQL / Database icon */}
+                <FontAwesomeIcon icon={faDatabase} color="#cc2927" size="2x" />
               </CircularProgressLabel>
             </MotionCircularProgress>
 
             <MotionCircularProgress
-              value={80}
-              color="green.400"
+              value={75}
+              color="#2ecc71"
               thickness={CircularProgressThickness}
               size={CircularProgressSize}
               whileHover={{ scale: 1.15 }}
@@ -141,7 +141,7 @@ const SkillsSection = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <CircularProgressLabel>
-                <FontAwesomeIcon icon={faPython} color="green" size="2x" />
+                <FontAwesomeIcon icon={faFileExcel} color="#2ecc71" size="2x" />
               </CircularProgressLabel>
             </MotionCircularProgress>
           </HStack>
