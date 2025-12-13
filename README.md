@@ -1,6 +1,6 @@
 # Hi, I'm Synic
 
-Student @ Full-Stack
+Student @ Data Analytics & Full-Stack
 
 ### Links & Profiles
 
