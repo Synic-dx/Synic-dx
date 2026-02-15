@@ -13,11 +13,11 @@ const projects = [
     link: "https://playepiano.vercel.app/",
   },
   {
-    title: "blackJack",
+    title: "Verbit",
     description:
-      "Fully Functional Blackjack Card Game Engine- Made with Vanilla JS",
-    getImageSrc: () => require("../images/blackjack.png"),
-    link: "https://synic-dx.github.io/blackJack/blackJack.html",
+      "AI Powered Unlimited Verbal Practice for IPMAT/CAT",
+    getImageSrc: () => require("../../public/verbit.png"),
+    link: "#", // Update with actual link if available
   },
   {
     title: "Little Lemon",
