@@ -16,8 +16,8 @@ const projects = [
     title: "Verbit",
     description:
       "AI Powered Unlimited Verbal Practice for IPMAT/CAT",
-    getImageSrc: () => require("../../public/verbit.png"),
-    link: "https://verbitai.vercel.app/", // Update with actual link if available
+    getImageSrc: () => process.env.PUBLIC_URL + "/verbit.png",
+    link: "#", // Update with actual link if available
   },
   {
     title: "Little Lemon",
