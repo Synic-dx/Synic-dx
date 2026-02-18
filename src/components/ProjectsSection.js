@@ -6,26 +6,12 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "ePiano",
-    description:
-      "3-Octave Online Piano Player Optimized For Keyboard Layouts- Made with Vanilla JS",
-    getImageSrc: () => require("../images/ePiano.png"),
-    link: "https://playepiano.vercel.app/",
-  },
-  {
     title: "Verbit",
     description:
       "AI Powered Unlimited Verbal Practice for IPMAT/CAT",
     getImageSrc: () => process.env.PUBLIC_URL + "/verbit.png",
     link: "#", // Update with actual link if available
-  },
-  {
-    title: "Little Lemon",
-    description:
-      "Landing Page & Fully Functional Table Booking System For Fictional Restaurant- Made with React",
-    getImageSrc: () => require("../images/littleLemon.png"),
-    link: "https://synic-dx.github.io/Little-Lemon/",
-  },
+  }
 ];
 
 const MotionBox = motion(Box);
