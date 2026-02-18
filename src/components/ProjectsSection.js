@@ -10,7 +10,7 @@ const projects = [
     description:
       "AI Powered Unlimited Verbal Practice for IPMAT/CAT",
     getImageSrc: () => process.env.PUBLIC_URL + "/verbit.png",
-    link: "#", // Update with actual link if available
+    link: "https://verbitai.vercel.app/", // Update with actual link if available
   }
 ];
 
